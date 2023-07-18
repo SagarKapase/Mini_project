@@ -3,14 +3,21 @@ html {
 
 body {
   margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
   padding: 0;
   box-sizing: border-box;
   width: 100.7rem;
   height: 170.9rem;
-  background-color: #f8f4f4; }
+  font-family: "Graphik Web Regular Italic";
+  line-height: 2.5rem; }
+
+.full-container {
+  background-color: #f5f5f5;
+  width: 106.7rem; }
 
 .colorstrip {
-  width: 100.7rem;
+  width: 106.7rem;
   height: 1rem;
   display: flex; }
   .colorstrip .red {
@@ -32,11 +39,21 @@ body {
 .first-container {
   width: 89rem;
   height: 14.7rem;
-  padding: 4.4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  padding: 4.4rem 4.4rem 4.4rem 8.5rem; }
+  .first-container .left-triangle {
+    width: 0;
+    height: 0;
+    border-left: 2.5rem solid #F3A21D;
+    border-top: 2.5rem solid #F3A21D;
+    border-bottom: 2.5rem solid transparent;
+    border-right: 2.5rem solid transparent;
+    margin-top: 3rem; }
+  .first-container .first-container-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -6rem; }
   .first-container .heading p {
     font-size: 3.5rem; }
   .first-container .designation {
@@ -44,40 +61,108 @@ body {
     text-align: center;
     font-size: 2.2rem;
     color: #545555; }
+  .first-container .right-triangle {
+    width: 0;
+    height: 0;
+    border-left: 2.5rem solid transparent;
+    border-top: 2.5rem solid transparent;
+    border-bottom: 2.5rem solid #F3A21D;
+    border-right: 2.5rem solid #F3A21D;
+    float: right;
+    margin-top: -4rem; }
 
 .second-container {
   color: #545555;
   font-size: 1.8rem;
-  padding: 0 4.4rem 4.5rem 4.4rem;
-  text-align: justify; }
+  padding: 0 14rem 4.5rem 8.5rem;
+  text-align: justify;
+  font-weight: 400; }
   .second-container div {
-    position: relative;
     height: 7rem; }
 
 .third-container {
   color: #545555;
   font-size: 1.8rem;
-  padding: 3.5rem 0rem 4.4rem 4.4rem;
+  padding: 3.5rem 0rem 4.4rem 8.5rem;
   display: flex;
-  margin: 3rem; }
+  margin: 3rem;
+  font-weight: 400; }
+  .third-container .left-triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid red;
+    border-top: 20px solid red;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid transparent;
+    margin-top: -3rem;
+    margin-left: -3rem; }
   .third-container div {
-    height: 10rem; }
+    height: 12rem; }
   .third-container .img-container img {
     width: 21.9rem;
     height: 21.2rem; }
+  .third-container .img-container h3 {
+    margin-left: 1rem; }
   .third-container .right-container {
-    padding: 0 0 0 4.5rem; }
+    padding: 0 8rem 0 4rem;
+    text-align: justify; }
 
 .fourth-container {
-  margin-top: 13rem;
-  width: 100.67rem;
-  height: 40.3rem; }
-  .fourth-container .black-container {
-    width: 78.6rem;
-    background-color: #281c24;
-    height: 40.3rem; }
-    .fourth-container .black-container .black-container-content {
-      font-size: 2.1rem;
+  margin-top: 17rem; }
+  .fourth-container .full-red-container {
+    width: 106.7rem;
+    height: 40.3rem;
+    background-color: #EB2327;
+    display: flex; }
+    .fourth-container .full-red-container .black-container {
+      width: 78.6rem;
+      background-color: #281c24;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       color: #FFFFFF;
-      padding: 12rem 24rem 12rem 8rem;
-      text-align: justify; }
+      font-size: 2.1rem; }
+      .fourth-container .full-red-container .black-container .content {
+        padding: 0 19rem 0 9rem;
+        line-height: 3rem; }
+    .fourth-container .full-red-container .trekked-img {
+      width: 25.2rem;
+      height: 33.9rem; }
+      .fourth-container .full-red-container .trekked-img img {
+        width: 25.2rem;
+        height: 33.9rem;
+        margin-left: -12.1rem;
+        margin-top: 3.2rem;
+        margin-bottom: 3.2rem; }
+
+.fifth-container {
+  font-size: 1.8rem; }
+  .fifth-container .container-content {
+    margin-left: 9rem; }
+    .fifth-container .container-content div {
+      margin-top: 3rem; }
+    .fifth-container .container-content .wishing-line {
+      width: 81.7rem;
+      margin-top: 5rem;
+      color: #545555; }
+    .fifth-container .container-content .button button {
+      width: 34.9rem;
+      height: 5rem;
+      font-size: 1.8rem;
+      background: #EB2327;
+      color: #FFFFFF;
+      font-weight: bold; }
+    .fifth-container .container-content .regards {
+      width: 18rem;
+      margin-bottom: 3rem;
+      font-family: sans-serif;
+      font-weight: bold;
+      color: #545555; }
+
+.footer {
+  width: 106.7rem;
+  height: 20rem;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
