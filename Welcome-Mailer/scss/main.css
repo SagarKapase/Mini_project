@@ -1,0 +1,180 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 106.7rem;
+  box-sizing: border-box;
+  font-family: "Graphik Web Regular Italic";
+  line-height: 3rem;
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  color: #545555;
+}
+
+main {
+  background-color: #f5f5f5;
+}
+main .color-strip {
+  height: 1.3rem;
+  display: flex;
+}
+main .color-strip .red {
+  flex: 1.8;
+  background-color: #EB2327;
+}
+main .color-strip .yellow {
+  flex: 1.6;
+  background-color: #F3A21D;
+}
+main .color-strip .pink {
+  flex: 1.4;
+  background-color: #B04E94;
+}
+main .color-strip .blue {
+  flex: 1.1;
+  background-color: #1180B7;
+}
+main .color-strip .green {
+  flex: 1;
+  background-color: #1AA99C;
+}
+main .header-part .header-content {
+  padding: 4rem 8rem 0 8rem;
+  position: relative;
+}
+main .header-part .header-content .left-triangle {
+  width: 0;
+  height: 0;
+  border-left: 2.5rem solid #F3A21D;
+  border-top: 2.5rem solid #F3A21D;
+  border-bottom: 2.5rem solid transparent;
+  border-right: 2.5rem solid transparent;
+  position: absolute;
+}
+main .header-part .header-content .heading-designation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem;
+}
+main .header-part .header-content .heading-designation .heading {
+  font-size: 3.5rem;
+  color: #000;
+}
+main .header-part .header-content .heading-designation .heading span {
+  font-family: sans-serif;
+  font-weight: 700;
+}
+main .header-part .header-content .heading-designation .designation {
+  font-size: 2.2rem;
+  color: #545555;
+}
+main .header-part .header-content .right-triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 2.5rem;
+  border-color: transparent #F3A21D #F3A21D transparent;
+  top: 15.4rem;
+  left: 88%;
+}
+main .text-container .container {
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 0 13rem 0 8rem;
+}
+main .img-text-content {
+  position: relative;
+  top: 5rem;
+}
+main .img-text-content .left-triangle {
+  width: 0;
+  height: 0;
+  border-left: 2.5rem solid #EB2327;
+  border-top: 2.5rem solid #EB2327;
+  border-bottom: 2.5rem solid transparent;
+  border-right: 2.5rem solid transparent;
+  position: absolute;
+  left: 7.3%;
+}
+main .img-text-content .container {
+  display: flex;
+  gap: 5rem;
+  padding: 5rem 10rem 5rem 12rem;
+}
+main .img-text-content .container .profile-img h4 {
+  font-size: 1.8rem;
+  position: relative;
+  left: 1rem;
+}
+main .img-text-content .container .content {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+  gap: 2rem;
+}
+main .red-black-container {
+  background-color: #EB2327;
+  position: relative;
+  top: 5rem;
+}
+main .red-black-container .black-container {
+  width: 83.6rem;
+  background-color: #281c24;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .red-black-container .black-container .text-content {
+  font-size: 2.1rem;
+  color: #FFFFFF;
+  padding: 0 0 0 8rem;
+  line-height: 3rem;
+}
+main .red-black-container .black-container .trekking-img {
+  width: 25rem;
+  height: 34rem;
+  position: relative;
+  left: 12rem;
+  padding: 2.5rem 0;
+}
+main .btn-regards-container {
+  position: relative;
+  top: 5rem;
+}
+main .btn-regards-container .content {
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 4rem 4rem 4rem 8rem;
+}
+main .btn-regards-container .content .regards {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+main .btn-regards-container .content button {
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  background: #EB2327;
+  color: #FFFFFF;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+main footer {
+  background-color: #000;
+  position: relative;
+  top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+}/*# sourceMappingURL=main.css.map */

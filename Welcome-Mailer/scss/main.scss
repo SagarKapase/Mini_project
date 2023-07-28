@@ -5,240 +5,223 @@ html {
 }
 
 body {
-    margin: auto;
-    margin-top: 5rem;
-    margin-bottom: 10rem;
-    padding: 0;
+    max-width: 106.7rem;
+    //max-height: 186.4rem;
     box-sizing: border-box;
-    width: 100.7rem;
-    height: 170.9rem;
     font-family: "Graphik Web Regular Italic";
-    line-height: 2.5rem;
+    line-height: 3rem;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    color: $text-color;
 }
 
-.full-container {
+main {
+
     background-color: $bg-color;
-    width: 106.7rem;
 
-}
+    .color-strip {
 
-.colorstrip {
-    width: 106.7rem;
-    height: 1rem;
-    display: flex;
-
-    .red {
-        width: 98rem;
-        background-color: $color-red;
-    }
-
-    .yellow {
-        width: 94rem;
-        background-color: $color-yellow;
-    }
-
-    .pink {
-        width: 90rem;
-        background-color: $color-pink;
-    }
-
-    .blue {
-        width: 86rem;
-        background-color: $color-blue;
-    }
-
-    .green {
-        width: 84rem;
-        background-color: $color-green;
-    }
-}
-
-
-.first-container {
-    width: 89rem;
-    height: 14.7rem;
-    padding: 4.4rem 4.4rem 4.4rem 8.5rem;
-
-
-    .left-triangle {
-        width: 0;
-        height: 0;
-        border-left: 2.5rem solid $color-yellow;
-        border-top: 2.5rem solid $color-yellow;
-        border-bottom: 2.5rem solid transparent;
-        border-right: 2.5rem solid transparent;
-        margin-top: 3rem;
-    }
-
-    .first-container-content {
+        height: 1.3rem;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: -6rem;
-    }
 
+        .red {
+            flex: 1.8;
+            background-color: $color-red;
+        }
 
-    .heading {
-        p {
-            font-size: 3.5rem;
+        .yellow {
+            flex: 1.6;
+            background-color: $color-yellow;
+        }
+
+        .pink {
+            flex: 1.4;
+            background-color: $color-pink;
+        }
+
+        .blue {
+            flex: 1.1;
+            background-color: $color-blue;
+        }
+
+        .green {
+            flex: 1;
+            background-color: $color-green;
         }
     }
 
-    .designation {
-        margin-top: -4rem;
-        text-align: center;
-        font-size: 2.2rem;
-        color: $text-color;
-    }
+    .header-part {
+        .header-content {
+            padding: 4rem 8rem 0 8rem;
+            position: relative;
 
-    .right-triangle {
-        width: 0;
-        height: 0;
-        border-left: 2.5rem solid transparent;
-        border-top: 2.5rem solid transparent;
-        border-bottom: 2.5rem solid $color-yellow;
-        border-right: 2.5rem solid $color-yellow;
-        float: right;
-        margin-top: -4rem;
-    }
-}
+            .left-triangle {
+                width: 0;
+                height: 0;
+                border-left: 2.5rem solid $color-yellow;
+                border-top: 2.5rem solid $color-yellow;
+                border-bottom: 2.5rem solid transparent;
+                border-right: 2.5rem solid transparent;
+                position: absolute;
+            }
 
-.second-container {
-    color: $text-color;
-    font-size: 1.8rem;
-    padding: 0 14rem 4.5rem 8.5rem;
-    text-align: justify;
-    font-weight: 400;
+            .heading-designation {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
 
-    div {
-        height: 7rem;
-    }
-}
+                padding: 4rem;
 
-.third-container {
-    color: $text-color;
-    font-size: 1.8rem;
-    padding: 3.5rem 0rem 4.4rem 8.5rem;
-    display: flex;
-    margin: 3rem;
-    font-weight: 400;
+                .heading {
+                    font-size: 3.5rem;
+                    color: $color-black;
 
-    .left-triangle {
-        width: 0;
-        height: 0;
-        border-left: 20px solid red;
-        border-top: 20px solid red;
-        border-bottom: 20px solid transparent;
-        border-right: 20px solid transparent;
-        margin-top: -3rem;
-        margin-left: -3rem;
-    }
+                    span {
+                        font-family: sans-serif;
+                        font-weight: 700;
+                    }
+                }
 
-    div {
-        height: 12rem;
-    }
+                .designation {
+                    font-size: 2.2rem;
+                    color: $text-color;
+                }
+            }
 
-    .img-container {
-        img {
-            width: 21.9rem;
-            height: 21.2rem;
-        }
 
-        h3 {
-            margin-left: 1rem;
+            .right-triangle {
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 2.5rem;
+                border-color: transparent $color-yellow $color-yellow transparent;
+                top: 15.4rem;
+                left: 88%;
+            }
+
+
         }
     }
 
-    .right-container {
-        padding: 0 8rem 0 4rem;
-        text-align: justify;
+    .text-container {
+
+        .container {
+            font-size: 1.8rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            padding: 0 13rem 0 8rem;
+
+        }
     }
-}
 
-.fourth-container {
-    margin-top: 17rem;
+    .img-text-content {
+        position: relative;
+        top: 5rem;
 
-    .full-red-container {
-        width: 106.7rem;
-        height: 40.3rem;
+        .left-triangle {
+            width: 0;
+            height: 0;
+            border-left: 2.5rem solid $color-red;
+            border-top: 2.5rem solid $color-red;
+            border-bottom: 2.5rem solid transparent;
+            border-right: 2.5rem solid transparent;
+            position: absolute;
+            left: 7.3%;
 
+        }
+
+        .container {
+            display: flex;
+            gap: 5rem;
+            padding: 5rem 10rem 5rem 12rem;
+
+            .profile-img {
+                h4 {
+                    font-size: 1.8rem;
+                    position: relative;
+                    left: 1rem;
+                }
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                font-size: 1.8rem;
+                gap: 2rem;
+            }
+        }
+    }
+
+    .red-black-container {
         background-color: $color-red;
-        display: flex;
+        position: relative;
+        top: 5rem;
 
         .black-container {
-            width: 78.6rem;
+            width: 83.6rem;
             background-color: $color-light-black;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: $color-white;
-            font-size: 2.1rem;
 
-            .content {
-                padding: 0 19rem 0 9rem;
+            .text-content {
+                font-size: 2.1rem;
+                color: $color-white;
+                padding: 0 0 0 8rem;
                 line-height: 3rem;
             }
-        }
 
-        .trekked-img {
-            width: 25.2rem;
-            height: 33.9rem;
+            .trekking-img {
+                width: 25rem;
+                height: 34rem;
 
-            img {
-                width: 25.2rem;
-                height: 33.9rem;
-                margin-left: -12.1rem;
-                margin-top: 3.2rem;
-                margin-bottom: 3.2rem;
+                position: relative;
+                left: 12rem;
+                padding: 2.5rem 0;
             }
         }
     }
-}
 
-.fifth-container {
-    font-size: 1.8rem;
+    .btn-regards-container {
+        position: relative;
+        top: 5rem;
 
-    .container-content {
-        margin-left: 9rem;
+        .content {
+            font-size: 1.8rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            padding: 4rem 4rem 4rem 8rem;
 
-        div {
-            margin-top: 3rem;
-        }
+            .regards {
+                font-family: sans-serif;
+                font-weight: bold;
+            }
 
-        .wishing-line {
-            width: 81.7rem;
-            margin-top: 5rem;
-            color: $text-color;
-        }
-
-        .button {
             button {
-                width: 34.9rem;
-                height: 5rem;
+                padding: 1.5rem;
                 font-size: 1.8rem;
                 background: $color-red;
                 color: $color-white;
                 font-weight: bold;
+                border: none;
+                cursor: pointer;
             }
         }
-
-        .regards {
-            width: 18rem;
-            margin-bottom: 3rem;
-            font-family: sans-serif;
-            font-weight: bold;
-            color: #545555;
-        }
     }
-}
 
-.footer {
-    //change the color to black
-    width: 106.7rem;
-    height: 20rem;
-    background-color: $color-black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    footer {
+        background-color: $color-black;
+        position: relative;
+        top: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 0;
+    }
 }
